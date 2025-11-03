@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Синемариум</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+     <div class="containerNav">
+            <div class="logo">cinemarium</div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Афиша</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger-menu" id="burgerMenu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Афиша</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>СИНЕМАРИУМ</h1>
+                <p>место, где человек становится частью космоса, и бороздит просторы вселенной</p>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="service">
+                    <img src="img\фильмы.svg" alt="Фильмы">
+                    <h3>ФИЛЬМЫ</h3>
+                    <p>Погрузитесь в мир научных и фантастических фильмов!</p>
+                    <button>Выбрать</button>
+                </div>
+                <div class="service">
+                    <img src="img\райды.svg" alt="Райды">
+                    <h3>РАЙДЫ</h3>
+                    <p>Ощутите полет в визуальных аттракционах от первого лица!</p>
+                    <button>Выбрать</button>
+                </div>
+                <div class="service">
+                    <img src="img\шоу.svg" alt="Шоу">
+                    <h3>ШОУ</h3>
+                    <p>Светомузыкальные и визуальные шоу размывают реальность!</p>
+                    <button>Выбрать</button>
+                </div>
+                <div class="service">
+                    <img src="img\викторины.svg" alt="Викторины">
+                    <h3>ВИКТОРИНЫ</h3>
+                    <p>Увлекательные космические приключения: умами и играми!</p>
+                    <button>Выбрать</button>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <h2>САМОЕ ПОПУЛЯРНОЕ</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide popular-item">
+                            <img src="./img/астерия 1.png" alt="Астерия">
+                        </div>
+                        <div class="swiper-slide popular-item">
+                            <img src="./img/зоры 1.png" alt="Европа у пальце дазор">
+                        </div>
+                        <div class="swiper-slide popular-item">
+                            <img src="./img/солнце 1.png" alt="Удивительное путешествие">
+                        </div>
+                        <div class="swiper-slide popular-item">
+                            <img src="./img/звезды.png" alt="Описание 1">
+                        </div>
+                        <div class="swiper-slide popular-item">
+                            <img src="./img/угроза-из-космоса-1.png" alt="Описание 2">
+                        </div>
+                        <div class="swiper-slide popular-item">
+                            <img src="./img/созвездия.png" alt="Описание 3">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="registration-modal" id="registrationModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+    <button class="registration-button" id="registrationButton">Регистрация</button>
+    <script src="script.js"></script>    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
